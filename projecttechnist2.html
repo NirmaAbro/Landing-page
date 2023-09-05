@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>TECHNIST.</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular';
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            width: 100%;
+            height: 12vh;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            line-height: 30px;
+            padding: 0 30px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            float: right;
+            min-height: 50px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            
+        }
+
+        nav ul li a {
+            font-size: 30px;
+            color: black;
+            padding: 25px;
+            font-weight: bold;
+        
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        .wrapper {
+            background-color: rgb(4, 4, 45);
+        }
+
+        .top-content {
+            background-image: url(pic1.png);
+            border-radius: 0px 0px 200px 200px;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(4, 4, 45);
+
+        }
+
+        .top-main {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .top-main h1 {
+            font-size: 80px;
+            color: white;
+        }
+
+        .top-main p {
+            color: white;
+            font-size: 17px;
+        }
+
+        .middle-content {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(4, 4, 45);
+            display: flex;
+        }
+
+        .box1 {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .box1 img {
+            animation: movement 0.9s linear infinite alternate;
+            width: 100%;
+            height: 80%;
+        }
+
+        .box1 p {
+            color: white;
+            letter-spacing: 3px;
+            word-spacing: 5px;
+            padding: 180px 70px 100px 30px;
+            font-size: 15px;
+            font-family: cursive;
+        }
+
+        img {
+            padding: 50px 150px 30px 50px;
+        }
+
+        .bottom-content {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(4, 4, 45);
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .box2 {
+            margin-top: 100px;
+            width: 70%;
+            height: 100vh;
+            background-color: white;
+            border-radius: 0px 200px 200px 0px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box2 div h2 {
+            width: 20%;
+            text-transform: uppercase;
+            border-bottom: 2px solid black;
+            color: black;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            font-size: 20px;
+
+        }
+
+        .box2 div p {
+            padding: 20px;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            font-size: 20px;
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 50px;
+            font-family: cursive;
+
+        }
+
+        .brands {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(4, 4, 45);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: flex-end;
+        }
+
+        .box3 {
+            margin-top: 100px;
+            width: 70%;
+            height: 70vh;
+            display: flex;
+            background-color: rgb(61, 41, 231);
+            border-radius: 100px 0px 0px 100px;
+        }
+
+        .box3 div {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 50px;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            animation: movement 0.9s linear infinite alternate;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+
+        @keyframes movement {
+            to {
+                transform: translateY(-20px);
+            }
+        }
+
+        .box3 div:hover {
+            filter: invert(1);
+        }
+
+        .box3 p {
+            color: white;
+            text-decoration: underline;
+            font-size: 40px;
+            position: relative;
+            left: 45px;
+            top: 14%;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            padding: 2rem;
+        }
+
+        footer h1 {
+            color: rgb(51, 51, 20);
+            padding: 40px 0px 10px 40px;
+            font-size: 40px;
+        }
+
+        footer p {
+            margin: 20px 0px;
+            font-size: 25px;
+            font-family: cursive;
+        }
+
+        .box5 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0px 10px 40px;
+
+        }
+
+        .box5 h2 {
+            font-size: 30px;
+            font-size: 20px;
+            color: purple;
+            font-weight: bold;
+        }
+
+        .box5 ul li {
+            padding: 5px;
+        }
+
+        .box5 a:hover {
+            color: blue;
+        }
+
+
+        /* content */
+        .main-contact {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(4, 4, 45);
+        }
+
+        .details {
+            width: 70%;
+            height: 20vh;
+            background-color: white;
+            border-radius: 0px 10px 100px 0px;
+            padding: 50px;
+            margin: 50px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label for="" class="logo">TECHIST.</label>
+        <UL>
+            <li><a href="#home">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#brand">Brand</a></li>
+            <li><a href="#services">Services</a></li>
+        </UL>
+    </nav>
+
+    <!-- top content -->
+    <div class="wrapper">
+        <section class="top-content" id="home">
+            <div class="top-main">
+                <h1>TECHIST.</h1>
+                <P>SOLUTION TO ALL YOUR PROBLEMS</P>
+            </div>
+        </section>
+    </div>
+    <!-- midddle content -->
+    <section class="middle-content">
+        <div class="box1">
+            <img src="logooopur.jpg.webp" alt="">
+            <p> By continually adapting to technological advances and modern trends, TechIst always remains at the
+                forefront of application development. Our experienced and certified development teams use leading-edge
+                methodologies to design, develop, implement, and continually enhance innovative business solutions for
+                all major platforms and devices.</p>
+        </div>
+    </section>
+
+    <!-- BOTTOM CONTENT -->
+    <section class="bottom-content" id="about">
+        <div class="box2">
+            <div>
+                <h2>WHO WE ARE ?</h2>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quasi mollitia odit sequi quo autem
+                    vitae totam quia repellat a! Nisi magni ea laboriosam, facilis fugit vero aut vitae doloribus?</P>
+
+            </div>
+        </div>
+    </section>
+
+    <SECTION class="brands" id="brand">
+        <div class="box3">
+            <p>Brands</p>
+            <!-- <div> <i class="fab fa-google" style="font-size: 60px ">Google</i></div> -->
+            <div> <i class="fa-brands fa-amazon" style="font-size: 60px "></i> Amazon </div>
+            <div> <i class="fa-brands fa-instagram" style="font-size: 60px "></i> Instagram </div>
+            <div> <i class="fa-brands fa-linkedin-in" style="font-size: 60px "></i> LinkedIn </div>
+        </div>
+    </SECTION>
+
+    <footer>
+        <div class="box4">
+            <h1>TECHIST.</h1>
+            <P>@all right reserved NirmaAbro</P>
+        </div>
+        <div class="box5">
+            <h5>FOLLOW US</h5>
+            <ul>
+                <li> <a href="https://www.linkedin.com/in/nirma-abro-85a885230/">LinkedIn</a></li>
+                <li> <a href="https://github.com/NirmaAbro">Github</a></li>
+                <li> <a href="https://www.facebook.com/profile.php?id=100075848754894">facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
